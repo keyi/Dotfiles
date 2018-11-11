@@ -98,42 +98,7 @@ alias mkidr="mkdir"
 
 alias brew_all="brew update && brew outdated && brew upgrade && brew cleanup"
 alias vi="vim"
-alias ccat="colorize"
 
-# git command alias
-alias gym="git add . && git commit -m 'Initial commit'"
-alias gst="git status"
-alias gdf="git diff"
-alias gpl="git pull"
-alias gps="git push"
-alias gc="git checkout"
-alias gcb="git checkout -b"
-alias gbd="git branch -d"
-
-# django command alias
-alias pmr="python manage.py runserver"
-alias pmc="python manage.py collectstatic"
-alias pmm="python manage.py migrate"
-
-# git commit
-cmt() {
- if [ -z "$1" ]; then
-    # display usage if no parameters given
-    echo "Error: Please provide the commit to add."
- else
-    git add . && git commit -m $1
- fi
-}
-
-# git merge and push
-mpp() {
- if [ -z "$1" ]; then
-    # display usage if no parameters given
-    echo "Error: Please provide branch name to merge."
- else
-    git merge $1 && git pull && git push
- fi
-}
 
 # extract file
 function extract {
