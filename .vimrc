@@ -111,11 +111,6 @@ endfunction
 noremap <silent><expr> <Space>/ incsearch#go(<SID>config_easyfuzzymotion())
 
 
-Plugin 'honza/vim-snippets'
-let g:UltiSnipsExpandTrigger = "<tab>"
-let g:UltiSnipsJumpForwardTrigger = "<tab>"
-let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
-
 Plugin 'junegunn/goyo.vim'
 nnoremap <Leader>f :Goyo<CR>
 " enable line number in goyo
@@ -204,9 +199,6 @@ let g:syntastic_check_on_wq = 0
 
 let g:syntastic_python_checkers = ['flake8']
 let g:syntastic_python_flake8_args="--ignore=E402,E501"
-
-
-Plugin 'SirVer/ultisnips'
 
 Plugin 'sjl/gundo.vim'
 nnoremap <leader>h :GundoToggle<CR>
